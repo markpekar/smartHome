@@ -1,26 +1,40 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+    <div class="navbar">
+        <div class="navbar-brand">
+            Smart Home
+        </div>
+    </div>
+    <MainPage/>
+ 
+    
+</div>
+
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainPage from './components/mainPage.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    MainPage
   }
+  
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+.navbar{
+  background-color: #fff;
+  padding-left: 5rem;
+  border-bottom:1px solid black;
+}
+html{
+  background-color:#F3F7FB;
+}
+.sidebar{
+  width: 10%;
+  height: 100%;
 }
 </style>
